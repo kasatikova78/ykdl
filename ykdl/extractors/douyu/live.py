@@ -24,102 +24,102 @@ douyu_match_pattern = [ 'class="hroom_id" value="([^"]+)',
                       ]
 
 class Douyutv(VideoExtractor):
-    name = u'斗鱼直播 (DouyuTV)'
+    name = '斗鱼直播 (DouyuTV)'
 
     stream_ids = ['4K120', '4K110', '4K100', '4K90', '4K80', '4K70', '4K60', '4K50', '4K40', '4K30', '4K20', '4K10', '2K120', '2K110', '2K100', '2K90', '2K80', '2K70', '2K60', '2K50', '2K40', '2K30', '2K20', '2K10', '1080P120', '1080P110', '1080P100', '1080P90', '1080P80', '1080P70', '1080P60', '1080P50', '1080P40', '1080P30', '1080P20', '1080P10', 'Original', '720P120', '720P110', '720P100', '720P90', '720P80', '720P70', '720P60', '720P50', '720P40', '720P30', '720P20', '720P10', 'BD10M', 'BD8M', 'BD4M', '480P120', '480P110', '480P100', '480P90', '480P80', '480P70', '480P60', '480P50', '480P40', '480P30', '480P20', '480P10', '360P120', '360P110', '360P100', '360P90', '360P80', '360P70', '360P60', '360P50', '360P40', '360P30', '360P20', '360P10', '240P120', '240P110', '240P100', '240P90', '240P80', '240P70', '240P60', '240P50', '240P40', '240P30', '240P20', '240P10', 'BD', 'TD', 'HD', 'SD']
     profile_2_id = {
-        u'原画4K120': '4K120',
-        u'原画4K110': '4K110',
-        u'原画4K100': '4K100',
-        u'原画4K90': '4K90',
-        u'原画4K80': '4K80',
-        u'原画4K70': '4K70',
-        u'原画4K60': '4K60',
-        u'原画4K50': '4K50',
-        u'原画4K40': '4K40',
-        u'原画4K30': '4K30',
-        u'原画4K20': '4K20',
-        u'原画4K10': '4K10',
-        u'原画2K120': '2K120',
-        u'原画2K110': '2K110',
-        u'原画2K100': '2K100',
-        u'原画2K90': '2K90',
-        u'原画2K80': '2K80',
-        u'原画2K70': '2K70',
-        u'原画2K60': '2K60',
-        u'原画2K50': '2K50',
-        u'原画2K40': '2K40',
-        u'原画2K30': '2K30',
-        u'原画2K20': '2K20',
-        u'原画2K10': '2K10',
-        u'原画1080P120': '1080P120',
-        u'原画1080P110': '1080P110',
-        u'原画1080P100': '1080P100',
-        u'原画1080P90': '1080P90',
-        u'原画1080P80': '1080P80',
-        u'原画1080P70': '1080P70',
-        u'原画1080P60': '1080P60',
-        u'原画1080P50': '1080P50',
-        u'原画1080P40': '1080P40',
-        u'原画1080P30': '1080P30',
-        u'原画1080P20': '1080P20',
-        u'原画1080P10': '1080P10',
-        u'原画': 'Original',
-        u'原画720P120': '720P120',
-        u'原画720P110': '720P110',
-        u'原画720P100': '720P100',
-        u'原画720P90': '720P90',
-        u'原画720P80': '720P80',
-        u'原画720P70': '720P70',
-        u'原画720P60': '720P60',
-        u'原画720P50': '720P50',
-        u'原画720P40': '720P40',
-        u'原画720P30': '720P30',
-        u'原画720P20': '720P20',
-        u'原画720P10': '720P10',
-        u'蓝光10M': 'BD10M',
-        u'蓝光8M': 'BD8M',
-        u'蓝光4M': 'BD4M',
-        u'原画480P120': '480P120',
-        u'原画480P110': '480P110',
-        u'原画480P100': '480P100',
-        u'原画480P90': '480P90',
-        u'原画480P80': '480P80',
-        u'原画480P70': '480P70',
-        u'原画480P60': '480P60',
-        u'原画480P50': '480P50',
-        u'原画480P40': '480P40',
-        u'原画480P30': '480P30',
-        u'原画480P20': '480P20',
-        u'原画480P10': '480P10',
-        u'原画360P120': '360P120',
-        u'原画360P110': '360P110',
-        u'原画360P100': '360P100',
-        u'原画360P90': '360P90',
-        u'原画360P80': '360P80',
-        u'原画360P70': '360P70',
-        u'原画360P60': '360P60',
-        u'原画360P50': '360P50',
-        u'原画360P40': '360P40',
-        u'原画360P30': '360P30',
-        u'原画360P20': '360P20',
-        u'原画360P10': '360P10',
-        u'原画240P120': '240P120',
-        u'原画240P110': '240P110',
-        u'原画240P100': '240P100',
-        u'原画240P90': '240P90',
-        u'原画240P80': '240P80',
-        u'原画240P70': '240P70',
-        u'原画240P60': '240P60',
-        u'原画240P50': '240P50',
-        u'原画240P40': '240P40',
-        u'原画240P30': '240P30',
-        u'原画240P20': '240P20',
-        u'原画240P10': '240P10',
-        u'蓝光': 'BD',
-        u'超清': 'TD',
-        u'高清': 'HD',
-        u'流畅': 'SD'
+        '原画4K120': '4K120',
+        '原画4K110': '4K110',
+        '原画4K100': '4K100',
+        '原画4K90': '4K90',
+        '原画4K80': '4K80',
+        '原画4K70': '4K70',
+        '原画4K60': '4K60',
+        '原画4K50': '4K50',
+        '原画4K40': '4K40',
+        '原画4K30': '4K30',
+        '原画4K20': '4K20',
+        '原画4K10': '4K10',
+        '原画2K120': '2K120',
+        '原画2K110': '2K110',
+        '原画2K100': '2K100',
+        '原画2K90': '2K90',
+        '原画2K80': '2K80',
+        '原画2K70': '2K70',
+        '原画2K60': '2K60',
+        '原画2K50': '2K50',
+        '原画2K40': '2K40',
+        '原画2K30': '2K30',
+        '原画2K20': '2K20',
+        '原画2K10': '2K10',
+        '原画1080P120': '1080P120',
+        '原画1080P110': '1080P110',
+        '原画1080P100': '1080P100',
+        '原画1080P90': '1080P90',
+        '原画1080P80': '1080P80',
+        '原画1080P70': '1080P70',
+        '原画1080P60': '1080P60',
+        '原画1080P50': '1080P50',
+        '原画1080P40': '1080P40',
+        '原画1080P30': '1080P30',
+        '原画1080P20': '1080P20',
+        '原画1080P10': '1080P10',
+        '原画': 'Original',
+        '原画720P120': '720P120',
+        '原画720P110': '720P110',
+        '原画720P100': '720P100',
+        '原画720P90': '720P90',
+        '原画720P80': '720P80',
+        '原画720P70': '720P70',
+        '原画720P60': '720P60',
+        '原画720P50': '720P50',
+        '原画720P40': '720P40',
+        '原画720P30': '720P30',
+        '原画720P20': '720P20',
+        '原画720P10': '720P10',
+        '蓝光10M': 'BD10M',
+        '蓝光8M': 'BD8M',
+        '蓝光4M': 'BD4M',
+        '原画480P120': '480P120',
+        '原画480P110': '480P110',
+        '原画480P100': '480P100',
+        '原画480P90': '480P90',
+        '原画480P80': '480P80',
+        '原画480P70': '480P70',
+        '原画480P60': '480P60',
+        '原画480P50': '480P50',
+        '原画480P40': '480P40',
+        '原画480P30': '480P30',
+        '原画480P20': '480P20',
+        '原画480P10': '480P10',
+        '原画360P120': '360P120',
+        '原画360P110': '360P110',
+        '原画360P100': '360P100',
+        '原画360P90': '360P90',
+        '原画360P80': '360P80',
+        '原画360P70': '360P70',
+        '原画360P60': '360P60',
+        '原画360P50': '360P50',
+        '原画360P40': '360P40',
+        '原画360P30': '360P30',
+        '原画360P20': '360P20',
+        '原画360P10': '360P10',
+        '原画240P120': '240P120',
+        '原画240P110': '240P110',
+        '原画240P100': '240P100',
+        '原画240P90': '240P90',
+        '原画240P80': '240P80',
+        '原画240P70': '240P70',
+        '原画240P60': '240P60',
+        '原画240P50': '240P50',
+        '原画240P40': '240P40',
+        '原画240P30': '240P30',
+        '原画240P20': '240P20',
+        '原画240P10': '240P10',
+        '蓝光': 'BD',
+        '超清': 'TD',
+        '高清': 'HD',
+        '流畅': 'SD'
      }
 
     def purchase(self, room_id, gift_id, headers):
@@ -132,7 +132,7 @@ class Douyutv(VideoExtractor):
 
         purchase_api = 'https://www.douyu.com/japi/gift/donate/mainsite/v1'
         response = requests.post(purchase_api, headers = headers, data = data, timeout = 20, verify = False)
-        print "Purchase Result:", response.text
+        print("Purchase Result:", response.text)
 
         #Success
         '''
@@ -162,11 +162,11 @@ class Douyutv(VideoExtractor):
         error_text = html_response.xpath('//div[@class="error"]/span/p/text()').extract()
         if error_text:
             error_text = error_text[0]
-            if u'您观看的房间已被关闭' in error_text:
-                return u'您观看的房间已被关闭'
+            if '您观看的房间已被关闭' in error_text:
+                return '您观看的房间已被关闭'
                 
-            if u'该房间目前没有开放' in error_text:
-                return u'该房间目前没有开放'
+            if '该房间目前没有开放' in error_text:
+                return '该房间目前没有开放'
             
         self.vid = match1(html, '\$ROOM\.room_id\s*=\s*(\d+)',
                                 'room_id\s*=\s*(\d+)',
@@ -183,7 +183,7 @@ class Douyutv(VideoExtractor):
                 title = room_data['room_name']
                 artist = room_data['owner_name']
 
-        info.title = u'{} - {}'.format(title, artist)
+        info.title = '{} - {}'.format(title, artist)
         info.artist = artist
 
         js_enc = get_h5enc(html, self.vid)
@@ -228,7 +228,7 @@ class Douyutv(VideoExtractor):
 
             live_data = json.loads(html_content)
             if self.vid == '673305':
-                print "live_data:", live_data
+                print("live_data:", live_data)
             if live_data['error']:
                 return live_data['msg']
 
@@ -281,7 +281,7 @@ class Douyutv(VideoExtractor):
                 try:
                     response = requests.post('https://www.douyu.com/gapi/live/ticket/getH5Play/{}'.format(self.vid), headers = headers, data = data, timeout = 20, verify = False)
                     if self.vid == '673305':
-                        print "Ticket content:", response.text    
+                        print("Ticket content:", response.text)    
                     response.raise_for_status()
                     live_data = json.loads(response.content)
                     if live_data['error']:
@@ -291,10 +291,10 @@ class Douyutv(VideoExtractor):
                     is_trail = live_data['is_trail']
                     gift_id = live_data['gift_id']
                     if payment_mode == -1:
-                        print "Should perchase"
+                        print("Should perchase")
                         self.purchase(self.vid, gift_id, headers)
                 except Exception as exception:
-                    print traceback.format_exc()
+                    print(traceback.format_exc())
             
             if live_data['rtmp_live']:
                 real_url = '{}/{}'.format(live_data['rtmp_url'], live_data['rtmp_live'])
@@ -306,7 +306,7 @@ class Douyutv(VideoExtractor):
                     'size': float('inf')
                 }
             else:
-                print self.vid, "can not retrieve live url"
+                print(self.vid, "can not retrieve live url")
 
             '''
             error_msges = []
